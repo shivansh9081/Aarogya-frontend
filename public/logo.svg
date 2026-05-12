@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Deep forest green gradient -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2A8A60"/>
+      <stop offset="100%" stop-color="#1B6B4D"/>
+    </radialGradient>
+    <!-- Saffron accent -->
+    <radialGradient id="saffronGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#FF9933"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 1 — Outermost decorative ring (8 petals)
+  ═══════════════════════════════════════ -->
+  <g transform="translate(100,100)">
+    <!-- 8 outer petals -->
+    <g opacity="0.85">
+      <ellipse rx="7" ry="16" fill="#1B6B4D" transform="rotate(0)  translate(0,-82)"/>
+      <ellipse rx="7" ry="16" fill="#1B6B4D" transform="rotate(45) translate(0,-82)"/>
+      <ellipse rx="7" ry="16" fill="#1B6B4D" transform="rotate(90) translate(0,-82)"/>
+      <ellipse rx="7" ry="16" fill="#1B6B4D" transform="rotate(135) translate(0,-82)"/>
+      <ellipse rx="7" ry="16" fill="#1B6B4D" transform="rotate(180) translate(0,-82)"/>
+      <ellipse rx="7" ry="16" fill="#1B6B4D" transform="rotate(225) translate(0,-82)"/>
+      <ellipse rx="7" ry="16" fill="#1B6B4D" transform="rotate(270) translate(0,-82)"/>
+      <ellipse rx="7" ry="16" fill="#1B6B4D" transform="rotate(315) translate(0,-82)"/>
+    </g>
+    <!-- Outer ring border -->
+    <circle r="74" fill="none" stroke="#1B6B4D" stroke-width="2.5"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 2 — Geometric pattern ring (8 diamonds)
+  ═══════════════════════════════════════ -->
+  <g transform="translate(100,100)">
+    <!-- 8 diamond shapes -->
+    <g fill="none" stroke="#1B6B4D" stroke-width="1.8" opacity="0.7">
+      <polygon points="0,-66 5,-61 0,-56 -5,-61" transform="rotate(0)"/>
+      <polygon points="0,-66 5,-61 0,-56 -5,-61" transform="rotate(45)"/>
+      <polygon points="0,-66 5,-61 0,-56 -5,-61" transform="rotate(90)"/>
+      <polygon points="0,-66 5,-61 0,-56 -5,-61" transform="rotate(135)"/>
+      <polygon points="0,-66 5,-61 0,-56 -5,-61" transform="rotate(180)"/>
+      <polygon points="0,-66 5,-61 0,-56 -5,-61" transform="rotate(225)"/>
+      <polygon points="0,-66 5,-61 0,-56 -5,-61" transform="rotate(270)"/>
+      <polygon points="0,-66 5,-61 0,-56 -5,-61" transform="rotate(315)"/>
+    </g>
+    <!-- Saffron accent dots at 8 points -->
+    <g fill="#FF9933">
+      <circle r="3" transform="rotate(0)   translate(0,-62)"/>
+      <circle r="3" transform="rotate(45)  translate(0,-62)"/>
+      <circle r="3" transform="rotate(90)  translate(0,-62)"/>
+      <circle r="3" transform="rotate(135) translate(0,-62)"/>
+      <circle r="3" transform="rotate(180) translate(0,-62)"/>
+      <circle r="3" transform="rotate(225) translate(0,-62)"/>
+      <circle r="3" transform="rotate(270) translate(0,-62)"/>
+      <circle r="3" transform="rotate(315) translate(0,-62)"/>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 3 — Inner concentric rings
+  ═══════════════════════════════════════ -->
+  <circle cx="100" cy="100" r="56" fill="none" stroke="#1B6B4D" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#1B6B4D" stroke-width="1"   opacity="0.4"/>
+  <circle cx="100" cy="100" r="44" fill="none" stroke="#0F4C3A" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Inner 8 small petals -->
+  <g transform="translate(100,100)" opacity="0.5">
+    <ellipse rx="3.5" ry="8" fill="#1B6B4D" transform="rotate(22.5) translate(0,-52)"/>
+    <ellipse rx="3.5" ry="8" fill="#1B6B4D" transform="rotate(67.5) translate(0,-52)"/>
+    <ellipse rx="3.5" ry="8" fill="#1B6B4D" transform="rotate(112.5) translate(0,-52)"/>
+    <ellipse rx="3.5" ry="8" fill="#1B6B4D" transform="rotate(157.5) translate(0,-52)"/>
+    <ellipse rx="3.5" ry="8" fill="#1B6B4D" transform="rotate(202.5) translate(0,-52)"/>
+    <ellipse rx="3.5" ry="8" fill="#1B6B4D" transform="rotate(247.5) translate(0,-52)"/>
+    <ellipse rx="3.5" ry="8" fill="#1B6B4D" transform="rotate(292.5) translate(0,-52)"/>
+    <ellipse rx="3.5" ry="8" fill="#1B6B4D" transform="rotate(337.5) translate(0,-52)"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════
+       LAYER 4 — Center background disc
+  ═══════════════════════════════════════ -->
+  <circle cx="100" cy="100" r="40" fill="url(#centerGlow)" opacity="0.12"/>
+  <circle cx="100" cy="100" r="40" fill="none" stroke="#1B6B4D" stroke-width="1.5"/>
+
+  <!-- ═══════════════════════════════════════
+       COMPOSITE SYMBOLS — Leaf + Building + Heart
+  ═══════════════════════════════════════ -->
+
+  <!-- ── LEAF (top center) — Health/Healthcare ── -->
+  <g transform="translate(100, 84)">
+    <!-- Main leaf body -->
+    <path d="M0,-14 C8,-10 10,-2 6,6 C3,11 -3,11 -6,6 C-10,-2 -8,-10 0,-14 Z"
+      fill="#1B6B4D" stroke="#0F4C3A" stroke-width="0.8"/>
+    <!-- Leaf stem -->
+    <line x1="0" y1="6" x2="0" y2="12" stroke="#0F4C3A" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Leaf veins -->
+    <line x1="0" y1="-8" x2="-4" y2="-2" stroke="#E8F3F0" stroke-width="0.7" opacity="0.8"/>
+    <line x1="0" y1="-4" x2="-5" y2="2"  stroke="#E8F3F0" stroke-width="0.7" opacity="0.8"/>
+    <line x1="0" y1="0"  x2="-4" y2="5"  stroke="#E8F3F0" stroke-width="0.7" opacity="0.8"/>
+    <line x1="0" y1="-8" x2="4"  y2="-2" stroke="#E8F3F0" stroke-width="0.7" opacity="0.8"/>
+    <line x1="0" y1="-4" x2="5"  y2="2"  stroke="#E8F3F0" stroke-width="0.7" opacity="0.8"/>
+    <line x1="0" y1="0"  x2="4"  y2="5"  stroke="#E8F3F0" stroke-width="0.7" opacity="0.8"/>
+  </g>
+
+  <!-- ── BUILDING (lower-left) — Civic Infrastructure ── -->
+  <g transform="translate(86, 106)">
+    <!-- Building body -->
+    <rect x="-9" y="-10" width="18" height="18" rx="1"
+      fill="#1B6B4D" stroke="#0F4C3A" stroke-width="0.8"/>
+    <!-- Roof accent (saffron) -->
+    <rect x="-9" y="-13" width="18" height="4" rx="1" fill="#FF9933"/>
+    <!-- Windows 3x2 grid -->
+    <rect x="-7" y="-7" width="4" height="4" rx="0.5" fill="#E8F3F0" opacity="0.9"/>
+    <rect x="-1" y="-7" width="4" height="4" rx="0.5" fill="#E8F3F0" opacity="0.9"/>
+    <rect x="5"  y="-7" width="4" height="4" rx="0.5" fill="#E8F3F0" opacity="0.9"/>
+    <rect x="-7" y="-1" width="4" height="4" rx="0.5" fill="#E8F3F0" opacity="0.7"/>
+    <rect x="-1" y="-1" width="4" height="4" rx="0.5" fill="#E8F3F0" opacity="0.7"/>
+    <rect x="5"  y="-1" width="4" height="4" rx="0.5" fill="#E8F3F0" opacity="0.7"/>
+  </g>
+
+  <!-- ── HEART (lower-right) — Community ── -->
+  <g transform="translate(114, 106)">
+    <!-- Geometric heart (angular) -->
+    <path d="M0,10 L-10,-2 C-10,-8 -5,-12 0,-8 C5,-12 10,-8 10,-2 Z"
+      fill="#1B6B4D" stroke="#0F4C3A" stroke-width="0.8"/>
+    <!-- Network nodes inside heart -->
+    <circle cx="0"  cy="-2" r="1.8" fill="#FF9933"/>
+    <circle cx="-5" cy="2"  r="1.4" fill="#FF9933" opacity="0.85"/>
+    <circle cx="5"  cy="2"  r="1.4" fill="#FF9933" opacity="0.85"/>
+    <circle cx="0"  cy="6"  r="1.2" fill="#FF9933" opacity="0.7"/>
+    <!-- Connection lines -->
+    <line x1="0"  y1="-2" x2="-5" y2="2"  stroke="#FF9933" stroke-width="0.7" opacity="0.6"/>
+    <line x1="0"  y1="-2" x2="5"  y2="2"  stroke="#FF9933" stroke-width="0.7" opacity="0.6"/>
+    <line x1="-5" y1="2"  x2="0"  y2="6"  stroke="#FF9933" stroke-width="0.7" opacity="0.6"/>
+    <line x1="5"  y1="2"  x2="0"  y2="6"  stroke="#FF9933" stroke-width="0.7" opacity="0.6"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════
+       Center dot (unity point)
+  ═══════════════════════════════════════ -->
+  <circle cx="100" cy="100" r="3" fill="#FF9933"/>
+  <circle cx="100" cy="100" r="1.5" fill="#1B6B4D"/>
+</svg>
